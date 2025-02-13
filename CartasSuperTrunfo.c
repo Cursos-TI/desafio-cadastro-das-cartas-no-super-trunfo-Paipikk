@@ -21,31 +21,43 @@ int main() {
   int Codigocidade, Pontosturisticos;
   char nome[40];
   float Populacao;
-  int area;
-  float PIB;
+  float area;
+  double PIB;
+  float Densidade;
   
   printf("digite o Codigo da Cidade: \n");
    scanf("%d", &Codigocidade);
 
+   getchar();
+
   printf("digite o Nome da cidade: \n");
-   scanf("%s", &nome);
+   scanf("%s", nome);
 
   printf("digite a Populção da cidade: \n");
    scanf("%f", &Populacao);
 
-   printf("digite a area em Metros quadrados da cidade: \n");
-   scanf("%d", &area);
+   printf("digite a area em KM quadrados da cidade: \n");
+   scanf("%f", &area);
 
    printf("digite o PIB da cidade: \n");
-   scanf("%f", &PIB);
+   scanf("%lf", &PIB);
 
  printf("digite o numero de pontos turisticos: \n");
    scanf("%d", &Pontosturisticos);
 
+   Densidade = Populacao / area;
 
-   printf(" Codigo da Cidade: %d\n  Nome da Cidade: %s \n  População da cidade: %f\n ", Codigocidade,nome,Populacao);
-   printf(" Area da cidade em Metros quadrados: %d \n  PIB da cidade: %f \n ", area, PIB);
-   printf("Pontos Turisticos da cidade: %d \n ", Pontosturisticos);
+   
+
+  
+   printf("\n=== Informações da Cidade ===\n");
+   printf("Código da Cidade: %d\n", Codigocidade);
+   printf("Nome da Cidade: %s\n", nome);
+   printf("População da Cidade: %.3f\n", Populacao);
+   printf("Área da Cidade (km²): %.3f\n", area);
+   printf("PIB da Cidade: %.2lf\n", PIB);
+   printf("Pontos Turísticos: %d\n", Pontosturisticos);
+   printf("Densidade Demográfica: %.3f hab/km²\n", Densidade);
 
 
     return 0;
