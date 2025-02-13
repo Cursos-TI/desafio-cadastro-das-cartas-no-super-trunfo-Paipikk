@@ -24,7 +24,9 @@ int main() {
   float area;
   double PIB;
   float Densidade;
-  
+  float PIBpercapita;
+
+
   printf("digite o Codigo da Cidade: \n");
    scanf("%d", &Codigocidade);
 
@@ -47,7 +49,7 @@ int main() {
 
    Densidade = Populacao / area;
 
-   
+   PIBpercapita = PIB / Populacao;
 
   
    printf("\n=== Informações da Cidade ===\n");
@@ -58,7 +60,7 @@ int main() {
    printf("PIB da Cidade: %.2lf\n", PIB);
    printf("Pontos Turísticos: %d\n", Pontosturisticos);
    printf("Densidade Demográfica: %.3f hab/km²\n", Densidade);
-
+   printf("O PIB per capita atual da cidade é: %.3f \n", PIBpercapita);
 
     return 0;
 }
