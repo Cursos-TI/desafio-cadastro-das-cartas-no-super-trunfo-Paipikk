@@ -28,7 +28,7 @@ int main() {
   int pontosTuristicos1, pontosTuristicos2;
   float densidade1, densidade2;
   float PIBpercapita1, PIBpercapita2;
---
+
   // ------------------------------------Entrada de dados da Carta 1--------------------
   printf("Digite o Estado da Cidade 1: ");
   scanf("%s", estado1);
